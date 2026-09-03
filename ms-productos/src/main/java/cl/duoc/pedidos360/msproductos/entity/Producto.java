@@ -20,6 +20,9 @@ public class Producto {
     @Column(nullable = false)
     private String categoria;
 
+    @Column(length = 500)
+    private String imagen; // URL de la imagen
+
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
@@ -34,4 +37,9 @@ public class Producto {
 
     public String getCategoria() { return categoria; }
     public void setCategoria(String categoria) { this.categoria = categoria; }
+
+    public String getImagen() { return imagen; }
+    public void setImagen(String imagen) { this.imagen = imagen; }
+
+    
 }
